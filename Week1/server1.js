@@ -1,6 +1,6 @@
 const http = require('http');
 
-const hostname = '172.16.11.113';
+const hostname = '172.16.11.113'; // this is ip address (check your machines ip address and type it here)
 const port = 3000;
 
 const server = http.createServer((req, res) => {
@@ -23,3 +23,4 @@ const server = http.createServer((req, res) => {
 server.listen(port, hostname, () => {             // START the server.
   console.log(`Server running at http://${hostname}:${port}/`);
 });
+
